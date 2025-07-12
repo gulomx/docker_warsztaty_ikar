@@ -8,6 +8,14 @@ foreach ($files as $file) {
         echo $file . "<br>";
     }
 }
+
+// wyswiet informacje o serwerze
+echo "<br>Informacje o serwerze:<br>";
+echo "Nazwa hosta: " . gethostname() . "<br>";
+echo "Adres IP: " . gethostbyname(gethostname()) . "<br>";  
+// wyswiet informacje o systemie operacyjnym
+echo "System operacyjny: " . php_uname() . "<br>";
+
 // wyswiet informacje o PHP
 phpinfo();
 ?>
